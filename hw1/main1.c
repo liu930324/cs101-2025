@@ -1,3 +1,4 @@
+#include <stdio.h>
 int main() {
     char input[]="AAABBBBCCCCDD", output[100];
     int count = 1;
