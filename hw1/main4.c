@@ -9,14 +9,13 @@ void swap(char *a, char *b) {
 
 int main() {
     char input[30];
-    char output[60];
     scanf("%29s",input);
-    int len = strlen(a);
+    int len = strlen(input);
 
     for (int i = 0; i < len / 2; i++) {
-        swap(&a[i], &a[len - 1 - i]);
+        swap(&input[i], &input[len - 1 - i]);
     }
 
-    printf("%s\n", a);
+    printf("%s\n", input);
     return 0;
 }
