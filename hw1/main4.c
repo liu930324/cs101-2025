@@ -8,7 +8,9 @@ void swap(char *a, char *b) {
 }
 
 int main() {
-    char a[] = "Hello123";
+    char input[30];
+    char output[60];
+    scanf("%29s",input);
     int len = strlen(a);
 
     for (int i = 0; i < len / 2; i++) {
