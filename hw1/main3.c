@@ -1,7 +1,9 @@
 #include <stdio.h>
 
 int main() {
-    char binary_string[]="10001111";
+    char input[30];
+    char output[60];
+    scanf("%29s",input);
     int decimal_number = 0;
     char hexadecimal_string[100];
     int i, j;
