@@ -1,14 +1,13 @@
 #include <stdio.h>
 
 int main() {
-    char input[30];
-    char output[60];
-    scanf("%29s",input);
+	char input[30];
+    scanf("%29s", input);
     int decimal_number = 0;
     char hexadecimal_string[100];
     int i, j;
-    for(i=0; binary_string[i]!='\0'; i++)
-        decimal_number=decimal_number*2+(binary_string[i]-'0');
+   for (i = 0; input[i] != '\0'; i++)
+        decimal_number = decimal_number * 2 + (input[i] - '0');
     i=0;
     while(decimal_number!=0){
         int remainder = decimal_number % 16;
