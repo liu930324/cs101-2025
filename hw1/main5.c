@@ -14,7 +14,9 @@ void print_num(int n){
 }
 int main()
 {
-    int rows=9;
+    char input[30];
+    char output[60];
+    scanf("%d",input);
     for(int i=1;i<=rows;i++){
         print_sp(rows,i);
         print_num(i);
