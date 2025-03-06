@@ -1,6 +1,8 @@
 #include <stdio.h>
 int main() {
-    char input[]="AAABBBBCCCCDD", output[100];
+    char input[30];
+    char output[60];
+    scanf("%29s",input);
     int count = 1;
     int len = 0;
     while (input[len] != '\0') {
