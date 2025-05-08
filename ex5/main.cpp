@@ -8,10 +8,12 @@ public:
     string m_model;
     int m_year;
     int m_MaxSeating;
+    int m_price;
     string m_DriveMode;
 
     Car(string x, string y, int z, int s, string t)
         : m_brand(x), m_model(y), m_year(z), m_MaxSeating(s), m_DriveMode(t) {
+        m_price = m_MaxSeating * 50000;
         info_print();
     }
 
@@ -19,10 +21,14 @@ public:
         return m_MaxSeating;
     }
 
+    int get_m_price() {
+        return m_price;
+    }
+
     string get_m_DriveMode() {
         return m_DriveMode;
     }
-    
+
     void info_print() {
         cout << "Constructing " << m_brand << "_Car" << endl;
         cout << m_brand << " : Drive Mode = " << m_DriveMode << endl;
